@@ -1,0 +1,26 @@
+<%- include ('partials/header.ejs') %>
+
+    <div class="container">
+        <h1>todo list</h1>
+        <input type="text" id="search" name="search" placeholder="Search Todos">
+
+        <div>
+            <ul>
+                
+                <% todos.forEach(function(todo) { %>
+                    <li><%=todo.todo%></i> <form action="/?_method=delete" method="POST" style="display: inline">
+                        <button class="btn-trash" type="submit" id="fabutton" name="todoid" value="<%=todo._id%>">
+                        <i class="fa-solid fa-trash-can"></i></li>
+                    </button>
+                    </form>
+                <% }) %>
+            </ul>
+        </div>
+        <p>Add new todo</p>
+        <form action="/" method="POST">
+            <input type="text" id="newTodo" name="newTodo">
+        </form>
+
+    </div>
+
+<%- include ('partials/footer.ejs') %>
