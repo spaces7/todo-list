@@ -4,7 +4,11 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "node app.js",
+=======
+    "start": "node app.js"
+>>>>>>> fe03c5da122dc786f54313d2c0aac42f54d5c642
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ayush Sharma",
